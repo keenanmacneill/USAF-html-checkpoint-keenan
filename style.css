@@ -49,6 +49,11 @@ nav a:visited {
   border-color: orange;
   border-width: 1px;
   border-radius: 3px;
+  height: 30px;
+}
+
+.search button a {
+  display: contents;
 }
 
 .search button:hover {
@@ -56,22 +61,19 @@ nav a:visited {
   background-color: black;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Encode Sans", sans-serif;
-}
-
-main h1 {
+.login h1 {
   font-weight: 500;
+  text-align: center;
 }
 
 .login {
   display: flex;
   flex-direction: column;
+  align-self: center;
+  justify-self: center;
   width: 40%;
   gap: 20px;
+  font-family: "Encode Sans", sans-serif;
 }
 
 .login div {
@@ -90,10 +92,23 @@ main h1 {
   border: none;
   border-radius: 3px;
   width: 50px;
-  height: 25px;
+  height: 30px;
 }
 
 .login button:hover {
   font-weight: 700;
   background-color: black;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1% 0%;
+  gap: 10px;
+}
+
+.gallery a {
+  display: contents;
 }
